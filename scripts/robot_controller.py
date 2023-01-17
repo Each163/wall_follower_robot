@@ -156,43 +156,6 @@ class Controller(Node):
                 if self.right_dist > d:
                     self.found_wall_flag = False
 
-        # # follow the wall on the right side
-        # if self.leftfront_dist > d and self.front_dist > d and self.rightfront_dist > d:
-        #     self.cmd = "search for wall on the right"
-        #     msg.linear.x = self.forward_speed_slow
-        #     msg.angular.z = -self.turning_speed_slow    # turn right to find a wall
-        # elif self.leftfront_dist > d and self.front_dist > d and self.rightfront_dist < d:
-        #     if self.rightfront_dist < self.dist_from_wall_lower_bound:
-        #         self.cmd = "turn left"
-        #         msg.linear.x = self.forward_speed_slow
-        #         msg.angular.z = self.turning_speed_fast
-        #     else:
-        #         self.cmd = "follow wall"
-        #         msg.linear.x = self.forward_speed_slow
-        # # deal with other conditions
-        # elif self.leftfront_dist > d and self.front_dist < d and self.rightfront_dist > d:
-        #     self.cmd = "turn left"
-        #     msg.angular.z = self.turning_speed_fast     # let the right side of the robot face walls
-        # elif self.leftfront_dist > d and self.front_dist < d and self.rightfront_dist < d:
-        #     self.cmd = "turn left"
-        #     msg.angular.z = self.turning_speed_fast 
-        # elif self.leftfront_dist < d and self.front_dist > d and self.rightfront_dist > d:
-        #     self.cmd = "search for wall on the right"
-        #     msg.linear.x = self.forward_speed_slow
-        #     msg.angular.z = -self.turning_speed_slow    # turn right to find a wall
-        # elif self.leftfront_dist < d and self.front_dist > d and self.rightfront_dist < d:
-        #     self.cmd = "follow wall"
-        #     msg.linear.x = self.forward_speed_slow
-        #     # msg.angular.z = -self.turning_speed_slow    # turn right to find a wall
-        # elif self.leftfront_dist < d and self.front_dist < d and self.rightfront_dist > d:
-        #     self.cmd = "turn left"
-        #     msg.angular.z = self.turning_speed_fast 
-        # elif self.leftfront_dist < d and self.front_dist < d and self.rightfront_dist < d:
-        #     self.cmd = "turn left"
-        #     msg.angular.z = self.turning_speed_fast 
-        # else:
-        #     pass
-
         self.get_logger().info(f"control cmd: {self.cmd}")
 
         self.publisher_wheels.publish(msg)

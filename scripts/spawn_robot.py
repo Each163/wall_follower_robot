@@ -19,7 +19,7 @@ def main():
     #     get_package_share_directory('two_wheeled_robot_mine'), 'sdf', 'two_wheeled_robot.sdf'
     # )
     sdf_file_path = os.path.join(
-        get_package_share_directory('two_wheeled_robot_mine'), 'sdf', 'model.sdf'
+        get_package_share_directory('wall_follower_robot'), 'sdf', 'model.sdf'
     )
     print(f"robot_sdf_path={sdf_file_path}")
 

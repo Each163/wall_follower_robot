@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    pkg_dir = get_package_share_directory('two_wheeled_robot_mine')
+    pkg_dir = get_package_share_directory('wall_follower_robot')
     world_file_name = 'warehouse.world'
     world = os.path.join(pkg_dir, 'worlds', world_file_name)
 
@@ -19,7 +19,7 @@ def generate_launch_description():
     )
 
     spawn_entity = Node(
-        package='two_wheeled_robot_mine',
+        package='wall_follower_robot',
         executable='spawn_robot.py',
         arguments=['WarehouseBot', 'demo', '-1.5', '-4.0', '0.0'],
         output='screen'

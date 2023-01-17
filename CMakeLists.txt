@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(two_wheeled_robot_mine)
+project(wall_follower_robot)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -20,7 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
-# find_package(two_wheeled_robot_mine REQUIRED)
+# find_package(wall_follower_robot REQUIRED)
 
 install(
   DIRECTORY config include launch maps meshes models params rviz sdf urdf worlds 

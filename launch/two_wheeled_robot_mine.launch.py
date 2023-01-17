@@ -8,7 +8,7 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     # Set the path to this package
-    pkg_name = 'two_wheeled_robot_mine'
+    pkg_name = 'wall_follower_robot'
     pkg_share = FindPackageShare(package=pkg_name).find(pkg_name)
 
     # Set the path to the RViz configuration settings
