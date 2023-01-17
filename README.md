@@ -17,6 +17,8 @@ Simulation scene:
 <p align="center">
 	<img height="300" src="/images/simulation_in_gazebo.gif" />
 </p>
+
 ## Reference
 The models of the car and the world are from automaticaddison[^1]. This simulation is also learned from this website. 
+
 [^1]:https://automaticaddison.com
