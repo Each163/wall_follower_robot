@@ -23,7 +23,7 @@ find_package(rclpy REQUIRED)
 # find_package(wall_follower_robot REQUIRED)
 
 install(
-  DIRECTORY config include launch maps meshes models params rviz sdf urdf worlds 
+  DIRECTORY launch rviz sdf urdf worlds 
   DESTINATION share/${PROJECT_NAME}
 )
 
