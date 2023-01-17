@@ -15,5 +15,5 @@ ros2 launch wall_follower_robot controller_estimator.launch.py
 ```
 Simulation scene:
 <p align="center">
-	<img height="300" src="/images/simulation_in_gazebo.png" />
+	<img height="300" src="/images/simulation_in_gazebo.gif" />
 </p>
